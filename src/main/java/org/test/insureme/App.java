@@ -12,6 +12,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+
+
 /**
  * Hello world!
  *
@@ -22,15 +26,15 @@ public class App
     {
     	
     // initializing the web driver 
-    System.setProperty("webdriver.chrome.driver", "/Users/Dell/Downloads/chromedriver-win64 (1)/chromedriver-win64/chromedriver.exe");
-    
+    //System.setProperty("webdriver.chrome.driver", "/Users/Dell/Downloads/chromedriver-win64 (1)/chromedriver-win64/chromedriver.exe");
+    WebDriverManager.chromedriver().setup();
     //system properties
     ChromeOptions chromeOptions = new ChromeOptions();
     //to run in headless mode
-    //chromeOptions.addArguments("--headless");
+    chromeOptions.addArguments("--headless");
     // open url
     WebDriver driver = new ChromeDriver(chromeOptions);    	
-    driver.get("http://13.232.206.9:8081/contact.html");
+    driver.get("http://13.233.154.49:8081/contact.html");
     
     // invoke implicit wait
     driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
