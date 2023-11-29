@@ -2,9 +2,11 @@ package org.test.insureme;
 
 import java.io.File;
 import java.io.IOException;
+//import java.sql.DriverManager;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+//import org.apache.hc.core5.util.Asserts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
