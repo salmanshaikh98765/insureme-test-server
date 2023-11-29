@@ -26,7 +26,7 @@ public class App
     {
     	
     // initializing the web driver 
-    //System.setProperty("webdriver.chrome.driver", "/Users/Dell/Downloads/chromedriver-win64 (1)/chromedriver-win64/chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "/Users/Dell/Downloads/chromedriver-win64 (1)/chromedriver-win64/chromedriver.exe");
     WebDriverManager.chromedriver().setup();
     //system properties
     ChromeOptions chromeOptions = new ChromeOptions();
